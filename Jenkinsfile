@@ -9,3 +9,4 @@ node('master')
   { 
     sh "${mavenHome}/bin/mvn clean package"
   }
+  }
