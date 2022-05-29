@@ -1,4 +1,4 @@
-node('master')
+node('Linux (amd64)	')
   {
    def mavenHome = tool name: 'maven3.8.5'
   stage('1.git clone')
