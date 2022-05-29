@@ -9,4 +9,8 @@ node('master')
   { 
     sh "${mavenHome}/bin/mvn clean package"
   }
+  stage('3CodeQualityReport')
+  {
+    sh "${mavenHome}/bin/mvn sonar:sonar"
+  }
   }
