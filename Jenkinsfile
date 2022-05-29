@@ -14,4 +14,9 @@ node('master')
     sh "${mavenHome}/bin/mvn sonar:sonar"
   }
   
+  stage('4.UploadWarNexus')
+        {
+        sh "${mavenHome}/bin/mvn clean deploy"
+        }
+  
   }
